@@ -20,10 +20,10 @@ function setup() {
 	
  paper= new Paper(200,450,50)
 	 ground1 = new Ground(width/2,670,width,20)
-	 dustbin1= new Dustbin(1100,600,100,0)
-	 dustbin2= new Dustbin(1300,600,100,0)
-	 dustbin3 = new Dustbin(1300,600,100,0)
-
+	dustbin1= new Dustbin(1100,600,100,20,0)
+	dustbin2= new Dustbin(1300,600,100,20,0)
+    dustbin3 = new Dustbin(1300,600,100,20,0)
+    dustbin4=new Dustbin(1200,650,20,200,0)
 
 
 	Engine.run(engine);
@@ -42,7 +42,7 @@ function draw() {
   dustbin1.display();
   dustbin2.display();
   dustbin3.display();
-  
+  dustbin4.display()
 
  
 }

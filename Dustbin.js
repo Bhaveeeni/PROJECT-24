@@ -1,11 +1,11 @@
 class Dustbin {
-    constructor(x,y,height,angle){
+    constructor(x,y,height,width,angle){
         var options ={
             "restitution":0,
             "isStatic":true
         }
-        this.body=Bodies.rectangle(x,y,20,height,options)
-        this.width=20;
+        this.body=Bodies.rectangle(x,y,height,width,options)
+        this.width=width;
         this.height=height;
         Matter.Body.setAngle(this.body,angle)
   
